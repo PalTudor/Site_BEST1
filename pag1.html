@@ -1,0 +1,191 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="design.css">
+      <meta name="viewport" content="width=device-width, initial-scale = 1">
+      <meta charset=ÜTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ÏE=edge">
+      <title>Aniversare </title>
+      <link rel="icon" href="logo1.png" type="image/icon type">
+    </head>
+    <body>
+      <div class="Menu">
+        <img src="logo.jpg" height=105px>
+        <a href="#home"> Home </a>
+        <a href="#about"> About BEST</a>
+        <a href="#projects"> Projects </a>
+        <a href="https://bestcj.ro/join-us/"> Join Us! </a>
+        <a href="https://bestcj.ro/2-percent-program/"> 2% Program </a>
+        <a href="#contact"> Contact </a>
+      </div>
+      <div class="container" id="blur">
+        <div class="content">
+          <a class="cupon" href="#" onclick="toggle()">
+            <font face="Verdana">Wow, ne-ai vizitat site-ul. Click aici pentru o surpriza ;)</font>
+          </a>
+          <div>
+            <center>
+              <h1 class="home" id="home"> Board of European Students of Technology </h1>
+              <img class="img1" src="mongoliene.jpg">
+            </center>
+          </div>
+          <div class="about">
+            <div class="row">
+              <div class="column left">
+                <img src="logo1.png" height=272px, width=250px>
+              </div>
+              <div class="column right">
+                <h2> What is </h2>
+                <h1> BEST? </h1>
+                <p class="p_about">
+                  <strong>Board of European Students of Technology</strong>, is a constantly growing non-profit and non-political organization. Since 1989 we provide communication, co-operation and exchange possibilities for students all over Europe. </br>
+                  </br>
+                  <strong>Local BEST Group Cluj-Napoca</strong> consists of volunteers from the Technical University of Cluj-Napoca, a young group with enthusiastic and bold visions, highly motivated to learn what teamwork or project management are, or to develop a set of skills complementary to their studies.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <h1 class="projects" id="projects"> Projects </h1>
+            <div class="slideshow-container">
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+              <div class="mySlides fade">
+                
+                <div class="text">BEST Training Week</div>
+				<img src="btw.jpg" width=70%, height=500px>
+                <p class="p_about">
+                  <strong>BEST Training Week</strong> is an educational event that consists of free workshops and trainings which have the goal of helping students develop from and academical but also personal point of view. </br>
+                  </br> During this event, you can take part in training sessions that cover both <strong>soft and hard skills.</strong>
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <img src="ebec.jpg" width=70%, height=500px>
+                <div class="text">European BEST Engineering Competition</div>
+				<p class="p_about">
+                  <strong>EBEC</strong> is an engineering competition held at a European level, created to challenge and push the innovation and creativity of the students. This event is split in two different kind of challenges, team design and case study, both testing and requiring various skills. </br>
+                  </br> You can register individually or within a team of four.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <img src="js.jpg" width=70%, height=500px>
+                <div class="text">JobShop</div>
+				<p class="p_about">
+                  <strong>JobShop®</strong> is one of the oldest career events in Romania that is organized by students for students and graduates, an event that reached this year the 27th edition in Cluj-Napoca. </br>
+                  </br>The purpose of the event is to bring together the three entities that BEST works with : students, universities and companies.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <img src="cr.jpg" width=70%, height=450px>
+                <div class="text">CodeRun</div>
+				<p class="p_about">
+                 <strong>CodeRun</strong>, the newest event organized by BEST Cluj-Napoca, is an IT competition which gives students who are passionate about programming the opportunity to test their skills through various challenges. </br>
+				</br>
+				The event consists in two phases: the trainings and the competition itself. In the training phase, students have the chance to strengthen their programming knowledge, so that in the second phase, the competition, they'll be able to give everything they got!
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <img src="blr.jpg" width=70%, height=475px>
+                <div class="text">BLR</div>
+				<p class="p_about">
+                  <strong>The BattleLab Robotica</strong> phenomenon began in 2011 when BEST Cluj-Napoca and the Faculty of Electrical Engineering from the Technical University of Cluj-Napoca joined their forces to create a unique event in Cluj-Napoca - a sumo robotic competition.</br>
+				</br>
+				The competition’s theme consists of creating autonomous sumo robots, capable of identifying and eliminate the competing robot from the playing area in type 1 to 1 competitions.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <img src="gb.jpg" width=70%, height=500px>
+                <div class="text">Ghidul Bobocului</div>
+				<p class="p_about">
+                  <strong>Ghidul Bobocului</strong>, or Freshman’s Guide, is a BEST Cluj-Napoca project that we have been proudly doing for 19 years already.</br>
+				</br>
+				It represents a pocket-sized brochure that gives TUCN freshmen a step by step welcome to university guide, containing useful information regarding multiple subjects.
+                </p>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                  slideIndex = 1
+                }
+                if (n < 1) {
+                  slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+              }
+            </script>
+          </div>
+          <div class="contact">
+            <h1 class="contact" id="contact"> Contact </h1>
+			<img src = "misu.jpg" width=70%, height=50%>
+            <h3> Follow us on our social networks! </h3>
+            <a href="https://www.facebook.com/BESTcluj/" target="_blank" rel="noopener noreferrer">
+              <img src="fb.png" height=50px, width=50px, onmouseover="this.src='fb2.png';" onmouseout="this.src='fb.png';">
+            </a>
+            <a href="https://www.linkedin.com/company/best-cluj-napoca/" target="_blank" rel="noopener noreferrer">
+              <img class="mijloc" src="linked.png" height=50px, width=50px, onmouseover="this.src='linked2.png';" onmouseout="this.src='linked.png';">
+            </a>
+            <a href="https://www.instagram.com/best_clujnapoca/" target="_blank" rel="noopener noreferrer">
+              <img src="insta.png" height=50px, width=50px, onmouseover="this.src='insta2.png';" onmouseout="this.src='insta.png';">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="popup">
+        <h2> Felicitari! Ai castigat un pupic de la mine(Tudor), Misu sau Theo cu H! Te rugam sa iti revendici premiul pe parcursul galei sau al evenimentului intern :* </h2>
+        <a class="cupon" href="#" onclick="toggle()">Inapoi la site-ul mirobolant</a>
+      </div>
+      <script type="text/javascript">
+        function toggle() {
+          var blur = document.getElementById('blur');
+          blur.classList.toggle('active');
+          var popup = document.getElementById('popup');
+          popup.classList.toggle('active');
+        }
+      </script>
+      <script>
+        {
+          const nav = document.querySelector(".Menu");
+          let lastScrollY = window.scrollY;
+          window.addEventListener("scroll", () => {
+            if (lastScrollY < window.scrollY) {
+              nav.classList.add("Menu--hidden");
+            } else {
+              nav.classList.remove("Menu--hidden");
+            }
+            lastScrollY = window.scrollY;
+          });
+        }
+      </script>
+    </body>
+  </html>
